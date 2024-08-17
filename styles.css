@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('cloudy.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-app {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.weather-app:hover {
+    transform: scale(1.05);
+    
+    opacity:15;
+    background: linear-gradient(135deg, #e0f7fa 25%, #b9fbc0 100%);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2e3ecf;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 12px 20px;
+    border: 2px solid #4facfe;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    width: 250px;
+    transition: border-color 0.3s ease-in-out;
+    font-size: 1em;
+}
+
+input[type="text"]:focus {
+    border-color: #00f2fe;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #4facfe;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 1em;
+}
+
+button:hover {
+    background: #333;
+    border: 2px solid black;
+}
+
+.weather-display {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.weather-display div {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-display i {
+    margin-right: 10px;
+    color: #4facfe;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
